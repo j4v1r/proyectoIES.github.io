@@ -2,6 +2,10 @@ body{
     background-color: #EEEBEE;
 }
 
+#menu{
+    color: blue;
+}
+
 .botones{
 margin: auto;
 
