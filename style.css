@@ -1,0 +1,29 @@
+body{
+    background-color: #EEEBEE;
+}
+
+.botones{
+margin: auto;
+
+}
+
+.mapadiv{
+    width: 50%;
+    margin: auto;
+}
+
+.mapadiv path{
+    stroke: #960912;
+    stroke-width: 0.5px;
+}
+
+.ed :hover{
+    fill: blue;
+    fill-opacity: 50%;
+}
+
+/*
+.mapadiv :hover{
+    fill:orangered;
+}*/
+
