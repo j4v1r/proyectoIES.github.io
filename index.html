@@ -23,9 +23,34 @@
           Salones
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2001</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2002</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2003</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2004</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2005</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2006</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2007</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2101</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2102</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2103</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2104</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2105</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2106</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2107</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2201</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2202</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2203</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2204</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2205</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2206</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2207</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2008</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2009</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2010</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2011</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2012</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item" src="ed-02.png">2108</a></li>
+          <li class="salon" src="ed-02.png" ><a class="dropdown-item "  src="ed-02.png" >2109</a></li>
         </ul>
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           Laboratorios
@@ -31849,6 +31874,14 @@ C 1034.82 2445.82 1031.51 2452.11 1026.00 2456.00 Z"/>
       <img src="ed-01.png" id="ed-01" alt="">
     </div>
     <script>
+
+      document.querySelectorAll('.dropdown li').forEach(salon=>{
+        salon.onclick=()=>{
+          document.querySelector('.popup-image').style.display='block';
+          document.querySelector('.popup-image img').src = salon.getAttribute('src');
+        }
+      });
+
       document.querySelectorAll('.mapadiv path').forEach(edificio =>{
         edificio.onclick=()=>{
           document.querySelector('.popup-image').style.display='block';
