@@ -5,7 +5,10 @@ body{
 #menu{
     color: blue;
 }
-
+ul{
+    height: 350px;
+    overflow: auto;
+}
 .botones{
     align-self: auto;
     margin: auto;
