@@ -1,5 +1,5 @@
 body{
-    background-color: #6c9cc4;
+    background-color: #B6E5E8 !important;
 }
 
 #menu{
@@ -20,14 +20,16 @@ ul{
 .mapadiv{
     width: 50%;
     margin: auto;
+    fill: blue;
+    fill-opacity: 50%;
 }
 
 .mapadiv path{
     stroke: #960912;
-    stroke-width: 0.5px;
+    stroke-width: 0.3px;
 }
 
-.ed :hover{
+.edificio :hover{
     fill: blue;
     fill-opacity: 50%;
 }
@@ -66,6 +68,9 @@ ul{
         width: 95%;
     }
 }
+
+
+
 /*
 .mapadiv :hover{
     fill:orangered;
